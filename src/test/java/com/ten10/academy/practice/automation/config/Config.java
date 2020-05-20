@@ -42,6 +42,10 @@ public class Config {
     }
 
     public static String getBaseURL(String s) {
-        return getProperty(s + "BaseURL");
+        return getProperty(s + "BaseUrl");
+    }
+
+    public static String getBaseURL() {
+        return getProperty("baseUrl");
     }
 }

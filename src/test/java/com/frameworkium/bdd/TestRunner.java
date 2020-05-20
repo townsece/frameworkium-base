@@ -23,7 +23,7 @@ import java.lang.reflect.Method;
         plugin = {"pretty"},
         monochrome = true,
         tags = {"~@ignore"},
-        glue = {"com.ten10.academy.practice.automation.stepdefs"}
+        glue = {"com.ten10.academy.practice.automation.stepDefs"}
 )
 
 public class TestRunner implements ITest {
@@ -37,7 +37,6 @@ public class TestRunner implements ITest {
     public void setUpClass() {
         WebDriverManager.chromedriver().setup();
         WebDriverManager.firefoxdriver().setup();
-        WebDriverManager.edgedriver().setup();
         testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
     }
 
